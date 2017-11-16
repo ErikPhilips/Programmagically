@@ -9,6 +9,4 @@ var _$_write= document.write;
 
     $content.insertAfter($script);
   };
-$("#test").append("<div>Test2</div>");
-$("#test").insertAfter("<div>Test3</div>");
 console.log("DocWriteFixup.js::end");
