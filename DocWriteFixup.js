@@ -11,7 +11,7 @@ var _$_write= document.write;
       $script.data('js-script-tag-wrapper', $wrapper);
       $script.wrap($wrapper);
     }
-    $wrapper.append("<div>Start Content</div>");
+    $wrapper.html("<div>Start Content</div>");
     //$wrapper.append(content);
     //console.log(content);
     //$wrapper.append("<div>End Content</div>");
