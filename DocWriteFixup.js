@@ -12,6 +12,7 @@ var _$_write= document.write;
       $script.data('js-script-tag-wrapper', $wrapper);
       $script.wrap($wrapper);
     }
+    console.log($wrapper);
     $wrapper.append($('<div>Start Content1</div>'));
     $("#test5").append($('<div>Start Content2</div>'));
   };
