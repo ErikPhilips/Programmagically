@@ -1,24 +1,11 @@
 console.log("DocWriteFixup.js::start");
 var _$_write= document.write;
   document.write = (content) => {
-    //console.log(document.currentScript);
     var $script = $(document.currentScript);
     var src = $script.prop("src");
-    console.log(src);
-    var $parent = $script.parent();
-    console.log($parent);
     var selector = "script[src='" + src + "']";
     console.log(selector);
-    var $script2 = $(selector);
-    console.log($script2);
-    var $parent2 = $script2.parent();
-    console.log($parent2);
-
-    //console.log(content);
-    //var $content = $(content);
-
-    //$content.insertAfter($script);
-    //$(content).insertAfter($script);
-    console.log("-------------------------------------");
+    var $script = $(selector).filter((i,e)=>{ return !$(e).parent().is('head');});
+    console.log($script);
   };
 console.log("DocWriteFixup.js::end");
