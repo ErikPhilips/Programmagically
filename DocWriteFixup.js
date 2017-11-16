@@ -3,7 +3,7 @@ var _$_write= document.write;
   document.write = (content) => {
     //console.log(document.currentScript);
     var $script = $(document.currentScript);
-    var src = $script[0].prop("src");
+    var src = $script.prop("src");
     console.log(src);
     var $parent = $script.parent();
     console.log($parent);
