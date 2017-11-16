@@ -8,6 +8,6 @@ var _$_write= document.write;
     //var $content = $(content);
 
     //$content.insertAfter($script);
-    $("<div>Dyn Content</div>").insertAfter("#test5");
+    $(content).insertAfter("#test5");
   };
 console.log("DocWriteFixup.js::end");
