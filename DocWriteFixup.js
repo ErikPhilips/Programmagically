@@ -1,3 +1,4 @@
+console.log("DocWriteFixup.js::start");
 var _$_write= document.write;
   document.write = (content) => {
     var $script = $(document.currentScript);
@@ -8,3 +9,4 @@ var _$_write= document.write;
   };
 $("#test").append("<div>Test2</div>");
 $("#test").insertAfter("<div>Test3</div>");
+console.log("DocWriteFixup.js::end");
