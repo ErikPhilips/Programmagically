@@ -18,5 +18,7 @@ var _$_write= document.write;
   };
 console.log("DocWriteFixup.js::end");
 $(document).ready(()=>{
-  $('.js-wrapper').append("<div>Start Content2</div>");
+  var $wrap = $('.js-wrapper');
+  console.log($wrap);
+  $wrap.append("<div>Start Content2</div>");
 });
