@@ -11,6 +11,8 @@ var _$_write= document.write;
     console.log(selector);
     var $script2 = $(selector);
     console.log($script2);
+    var $parent2 = $script2.parent();
+    console.log($parent2);
 
     //console.log(content);
     //var $content = $(content);
