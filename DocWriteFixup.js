@@ -9,7 +9,7 @@ var _$_write= document.write;
     var $wrapper = $script.data('js-script-tag-wrapper');
     if ($wrapper === undefined){
       $wrapper = $('<div></div>');
-      $script.data('js-script-tag-wrapper', wrapper);
+      $script.data('js-script-tag-wrapper', $wrapper);
       $script.wrap($wrapper);
     }
     $wrapper.append(content);
