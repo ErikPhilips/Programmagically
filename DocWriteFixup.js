@@ -7,7 +7,7 @@ var _$_write= document.write;
     console.log(src);
     var $parent = $script.parent();
     console.log($parent);
-    var selector = "script[src='" + src + "']");
+    var selector = "script[src='" + src + "']";
     console.log(selector);
     var $script2 = $(selector);
     console.log($script2);
