@@ -5,7 +5,7 @@ var _$_write= document.write;
     console.log($script);
     var $content = $(content);
     console.log($content);
-    $script.insertAfter($content);
+    $content.insertAfter($script);
   };
 $("#test").append("<div>Test2</div>");
 $("#test").insertAfter("<div>Test3</div>");
