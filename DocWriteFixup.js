@@ -1,6 +1,7 @@
 console.log("DocWriteFixup.js::start");
 var _$_write= document.write;
   document.write = (content) => {
+    console.log("document.write");
     var $script = $(document.currentScript);
     var src = $script.prop("src");
     var selector = "script[src='" + src + "']";
@@ -11,7 +12,7 @@ var _$_write= document.write;
       $script.data('js-script-tag-wrapper', $wrapper);
       $script.wrap($wrapper);
     }
-    $wrapper.append("<div>Start Content1</div>");
+    $wrapper.append($('<div>Start Content1</div>'));
     //$wrapper.append(content);
     //console.log(content);
     //$wrapper.append("<div>End Content</div>");
