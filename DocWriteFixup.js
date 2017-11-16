@@ -13,13 +13,6 @@ var _$_write= document.write;
       $script.wrap($wrapper);
     }
     $wrapper.append($('<div>Start Content1</div>'));
-    //$wrapper.append(content);
-    //console.log(content);
-    //$wrapper.append("<div>End Content</div>");
+    $("#test5").append($('<div>Start Content2</div>'));
   };
 console.log("DocWriteFixup.js::end");
-$(document).ready(()=>{
-  var $wrap = $('.js-wrapper');
-  console.log($wrap);
-  $wrap.append("<div>Start Content2</div>");
-});
