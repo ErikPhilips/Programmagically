@@ -7,7 +7,7 @@ var _$_write= document.write;
     var $script = $(selector).filter((i,e)=>{ return !$(e).parent().is('head');});
     var $wrapper = $script.data('js-script-tag-wrapper');
     if ($wrapper === undefined){
-      $wrapper = $('<div class="js-wrapper" style="width: 50px;height:50px;border: 1px solid red;"></div>');
+      $wrapper = $('<div class="js-wrapper"></div>');
       $script.wrap($wrapper);
       $wrapper = $script.parent();
       $script.data('js-script-tag-wrapper', $wrapper);
