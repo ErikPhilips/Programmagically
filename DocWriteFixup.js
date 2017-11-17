@@ -10,6 +10,5 @@ document.write = (content) => {
     $wrapper = $script.parent();
     $script.data('js-script-tag-wrapper', $wrapper);
   }
-  _wrap = $wrapper;
   $wrapper.append(content));
 };
