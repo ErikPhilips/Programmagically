@@ -6,8 +6,9 @@ var _$_write= document.write;
     var $script = $(document.currentScript);
     var src = $script.prop("src");
     var selector = "script[src='" + src + "']";
+    console.log(selector);
     var $script = $(selector).filter((i,e)=>{ return !$(e).parent().is('head');});
-    console.log($script.parent().tagName);
+    console.log($script);
     var $wrapper = $script.data('js-script-tag-wrapper');
     if ($wrapper === undefined){
       console.log("creating wrapper");
