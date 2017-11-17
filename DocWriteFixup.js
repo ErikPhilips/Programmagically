@@ -15,6 +15,7 @@ var _$_write= document.write;
       $wrapper = $('<div class="js-wrapper" style="width: 50px;height:50px;border: 1px solid red;"></div>');
       $script.data('js-script-tag-wrapper', $wrapper);
       $script.wrap($wrapper);
+      _script = $script;
     }
     _wrap = $wrapper;
     console.log($wrapper);
